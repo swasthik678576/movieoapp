@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-import movieoReducer from './movieoSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import movieoReducer from "./movieoSlice";
 
 export const store = configureStore({
   reducer: {
-    movieoData : movieoReducer
+    movieoData: movieoReducer,
   },
-})
+});
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 //export type RootState = ReturnType<typeof store.getState>
